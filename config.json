@@ -7,13 +7,13 @@
   "bot_owner_user_id": "1378436095783735397",
   "panel_base_url": "https://vm.rnnodes.qzz.io",
   "channel_ids": {
-    "admin_vps_approval": "1378436095783735397"
+    "admin_vps_approval": ""
   },
   "reward_plans_enabled": {
     "boost": true,
     "invite": true
   },
-    "defaults": {
+  "defaults": {
     "node_id": 2,
     "template_uuid": "18e787b4-ce03-44fb-ba53-57dc4791e855",
     "user_snapshot_limit": 0,
@@ -23,9 +23,8 @@
     "admin_allocation_limit": 0,
     "admin_database_limit": 0,
     "user_total_backup_limit": 0,
-    "default_server_hostname_suffix": "rnnodes.host",
+    "default_server_hostname_suffix": "local",
     "default_location_id": 1
-  },
   },
   "paid_plans_data": [
     {
@@ -188,14 +187,17 @@
       "disk_gb": 160,
       "snapshot_limit": 4,
       "backup_limit": 0
-  },
+    }
+  ],
   "node_ips_map": {
-    "SG-1": "10.10.10.184"
+    "SG-1": "10.10.10.184",
+    "DE-1": "213.136.84.110"
   },
   "invite_check_delay_seconds": 5,
   "bot_activity": {
-    "name": "RN Nodes Vps",
-    "type": "watching"
+    "name": "Rn Nodes",
+    "type": "streaming",
+    "stream_url": "https://www.twitch.tv/voidnodes"
   },
   "emojis": {
     "success": "✅",
@@ -228,6 +230,25 @@
     "reinstall": "🛠️",
     "delete": "🗑️",
     "manage": "⚙️",
-    "network": "🌐"
+    "nodes": "📡",
+    "convert": "🔄",
+    "links": "🔗",
+    "sync": "🔄",
+    "network": "🌐",
+    "online": "🟢",
+    "offline": "🔴",
+    "starting": "🟡",
+    "stopping": "🟠",
+    "unknown_status": "❓",
+    "timeout": "⏱️",
+    "conn_refused": "🚫",
+    "dns_error": "🌐",
+    "net_error": "🔌",
+    "latency_high": "🟧",
+    "latency_medium": "🟨",
+    "bar_green": "🟩",
+    "bar_yellow": "🟨",
+    "bar_red": "🟥",
+    "bar_empty": "⬜"
   }
 }
