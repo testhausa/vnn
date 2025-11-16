@@ -188,7 +188,7 @@
       "disk_gb": 160,
       "snapshot_limit": 4,
       "backup_limit": 0
-  ],
+  },
   "node_ips_map": {
     "SG-1": "10.10.10.184"
   },
