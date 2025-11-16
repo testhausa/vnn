@@ -13,14 +13,19 @@
     "boost": true,
     "invite": true
   },
-  "defaults": {
+    "defaults": {
     "node_id": 2,
     "template_uuid": "18e787b4-ce03-44fb-ba53-57dc4791e855",
     "user_snapshot_limit": 0,
     "user_backup_limit": 0,
     "admin_snapshot_limit": 0,
     "admin_backup_limit": 0,
-    "default_server_hostname_suffix": "rn-nodes.pro"
+    "admin_allocation_limit": 0,
+    "admin_database_limit": 0,
+    "user_total_backup_limit": 0,
+    "default_server_hostname_suffix": "rnnodes.host",
+    "default_location_id": 1
+  },
   },
   "paid_plans_data": [
     {
@@ -30,6 +35,46 @@
       "ram_gb": 8,
       "cpu_cores": 2,
       "disk_gb": 30
+    },
+    {
+      "emoji": "💰",
+      "name": "Basic Plan",
+      "price": "4",
+      "ram_gb": 16,
+      "cpu_cores": 4,
+      "disk_gb": 50
+    },
+    {
+      "emoji": "💰",
+      "name": "Standard Plan",
+      "price": "6",
+      "ram_gb": 24,
+      "cpu_cores": 6,
+      "disk_gb": 100
+    },
+    {
+      "emoji": "💰",
+      "name": "Pro Plan",
+      "price": "12",
+      "ram_gb": 32,
+      "cpu_cores": 8,
+      "disk_gb": 256
+    },
+    {
+      "emoji": "💰",
+      "name": "Elite Plan",
+      "price": "14",
+      "ram_gb": 48,
+      "cpu_cores": 12,
+      "disk_gb": 384
+    },
+    {
+      "emoji": "💰",
+      "name": "Extreme Plan",
+      "price": "16",
+      "ram_gb": 64,
+      "cpu_cores": 24,
+      "disk_gb": 512
     }
   ],
   "boost_reward_tiers": [
@@ -40,8 +85,37 @@
       "ram_gb": 16,
       "cpu_cores": 4,
       "disk_gb": 100,
-      "node_id": 2,
-      "template_uuid": "18e787b4-ce03-44fb-ba53-57dc4791e855"
+      "snapshot_limit": 2,
+      "backup_limit": 0,
+      "allocation_limit": 1,
+      "database_limit": 1,
+      "minimum_server_tier_required": 1
+    },
+    {
+      "emoji": "🚀",
+      "name": "4x Boost Reward",
+      "server_boosts_required": 4,
+      "ram_gb": 32,
+      "cpu_cores": 8,
+      "disk_gb": 192,
+      "snapshot_limit": 3,
+      "backup_limit": 0,
+      "allocation_limit": 2,
+      "database_limit": 2,
+      "minimum_server_tier_required": 2
+    },
+    {
+      "emoji": "🚀",
+      "name": "6x Boost Reward",
+      "server_boosts_required": 6,
+      "ram_gb": 48,
+      "cpu_cores": 12,
+      "disk_gb": 256,
+      "snapshot_limit": 3,
+      "backup_limit": 0,
+      "allocation_limit": 0,
+      "database_limit": 0,
+      "minimum_server_tier_required": 3
     }
   ],
   "invite_reward_tiers": [
@@ -52,16 +126,75 @@
       "ram_gb": 2,
       "cpu_cores": 1,
       "disk_gb": 20,
-      "node_id": 2,
-      "template_uuid": "18e787b4-ce03-44fb-ba53-57dc4791e855"
-    }
+      "snapshot_limit": 1,
+      "backup_limit": 0
+    },
+    {
+      "emoji": "💌",
+      "name": "Silver Invite Tier",
+      "invites_required": 6,
+      "ram_gb": 4,
+      "cpu_cores": 2,
+      "disk_gb": 60,
+      "snapshot_limit": 1,
+      "backup_limit": 0
+    },
+    {
+      "emoji": "💌",
+      "name": "Gold Invite Tier",
+      "invites_required": 9,
+      "ram_gb": 6,
+      "cpu_cores": 2,
+      "disk_gb": 60,
+      "snapshot_limit": 2,
+      "backup_limit": 0
+    },
+    {
+      "emoji": "💌",
+      "name": "Platinum Invite Tier",
+      "invites_required": 12,
+      "ram_gb": 8,
+      "cpu_cores": 3,
+      "disk_gb": 80,
+      "snapshot_limit": 2,
+      "backup_limit": 0
+    },
+    {
+      "emoji": "💌",
+      "name": "Diamond Invite Tier",
+      "invites_required": 16,
+      "ram_gb": 12,
+      "cpu_cores": 3,
+      "disk_gb": 100,
+      "snapshot_limit": 3,
+      "backup_limit": 0
+    },
+    {
+      "emoji": "💌",
+      "name": "Master Invite Tier",
+      "invites_required": 24,
+      "ram_gb": 16,
+      "cpu_cores": 4,
+      "disk_gb": 120,
+      "snapshot_limit": 3,
+      "backup_limit": 0
+    },
+    {
+      "emoji": "💌",
+      "name": "Grandmaster Invite Tier",
+      "invites_required": 35,
+      "ram_gb": 24,
+      "cpu_cores": 6,
+      "disk_gb": 160,
+      "snapshot_limit": 4,
+      "backup_limit": 0
   ],
   "node_ips_map": {
     "SG-1": "10.10.10.184"
   },
   "invite_check_delay_seconds": 5,
   "bot_activity": {
-    "name": "RN Nodes",
+    "name": "RN Nodes Vps",
     "type": "watching"
   },
   "emojis": {
